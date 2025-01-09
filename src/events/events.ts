@@ -19,7 +19,7 @@ class BotEvents extends EventEmitter {
         this.emit("message_received", message);
     }
 
-    sendMessage(to: string, message: Message): void {
+    sendMessage(to: string, message: string): void {
         this.emit("message_send", to, message);
     }
 }
